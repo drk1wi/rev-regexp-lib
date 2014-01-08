@@ -46,15 +46,17 @@ std::string line;
 while(true)
 {
 	line.clear();
+    cout<<"Regular expression: ";
     std::getline(std::cin, line);
     result_vector=process_regex(line);
-    
+
+    cout<<"Matching string: ";
     for(int i=0;i<result_vector.size();i++)
     cout<<result_vector[i];
     cout<<endl;
-
+    
+}
 
 return 0;
-
 
 }
